@@ -586,7 +586,7 @@
     </section>
 
     <!-- FORM SECTION -->
-    <section class="form container">
+    <section class="form container" id="form-section">
       <h4 class="form-title">保証導入を申し込む</h4>
       <div class="form-content">
         <form
@@ -759,6 +759,22 @@
         </div>
       </div>
     </footer>
+
+    <!-- CTA BUTTON -->
+    <div class="cta-btn-wrapper">
+      <button
+        class="cta-btn"
+        onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'});"
+      >
+        <span class="cta-btn-icon">
+          <img src="./assets/images/icon/icon-cta.png" alt="">
+        </span>
+        <div class="cta-btn-text-wrapper">
+          <span class="cta-btn-text">保証導入を</span>
+          <span class="cta-btn-text">申し込む</span>
+        </div>
+      </button>
+    </div>
 
     <script src="assets/js/config.js"></script>
     <script src="assets/js/tooltip.js"></script>
