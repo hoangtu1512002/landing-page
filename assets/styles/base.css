@@ -1,0 +1,192 @@
+/* Base CSS - Reset and fundamental styles */
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #ea3887;
+    --sub-primary-color-1: #5966ff;
+    --sub-primary-color-2: #38918d;
+    --secondary-color: #6c757d;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+    --white-color: #fff;
+    --black-color: #000000;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --text-color: #333333;
+    --border-color: #ddd;
+    --bg-color: #f8f9fa;
+}
+
+/* HTML & Body */
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.6rem;
+}
+
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.8rem;
+    background-color: var(--white-color);
+    transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: var(--white-color);
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    accent-color: var(--primary-color);
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.title-pink {
+    color: var(--primary-color);
+}
+
+.title-blue {
+    color: var(--sub-primary-color-1);
+}
+
+.title-aqua {
+    color: var(--sub-primary-color-2);
+}
+
+.required {
+    background: #ff4c4f;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding: 2px 8px;
+    margin-left: 8px;
+}
